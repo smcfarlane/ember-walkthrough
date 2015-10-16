@@ -1,0 +1,7 @@
+<h2>new movie</h2>
+
+{{#new-movie-form submitForm=(action 'postNewMovie')}}
+  {{form-group label='Movie Title' name='title' placeholder='Movie Title' updateProperty=(action 'updateProperties')}}
+  {{form-group label='description' name='description' placeholder='Movie description' updateProperty=(action 'updateProperties')}}
+  {{form-group label='Movie Director' name='Director' placeholder='Movie Director' updateProperty=(action 'updateProperties')}}
+{{/new-movie-form}}
